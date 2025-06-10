@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7EEC9CB42DEA46E200D673AC /* ModelsR4 in Frameworks */ = {isa = PBXBuildFile; productRef = 7EEC9CB32DEA46E200D673AC /* ModelsR4 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7EEC9C962DEA468B00D673AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEC9CB42DEA46E200D673AC /* ModelsR4 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = LabReports;
 			packageProductDependencies = (
+				7EEC9CB32DEA46E200D673AC /* ModelsR4 */,
 			);
 			productName = LabReports;
 			productReference = 7EEC9C882DEA468A00D673AC /* LabReports.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 7EEC9C7F2DEA468A00D673AC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7EEC9CB22DEA46E200D673AC /* XCRemoteSwiftPackageReference "FHIRModels" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7EEC9C892DEA468A00D673AC /* Products */;
 			projectDirPath = "";
@@ -403,6 +412,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -431,6 +441,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -558,6 +569,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EEC9CB22DEA46E200D673AC /* XCRemoteSwiftPackageReference "FHIRModels" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/FHIRModels";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EEC9CB32DEA46E200D673AC /* ModelsR4 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EEC9CB22DEA46E200D673AC /* XCRemoteSwiftPackageReference "FHIRModels" */;
+			productName = ModelsR4;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7EEC9C802DEA468A00D673AC /* Project object */;
 }
